@@ -4,6 +4,7 @@ import LogoS from '../../assets/images/Dawit.png'
 import LogoSubtitle from '../../assets/images/Dawit sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser,faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 const Sidebar = () => (
   <div className="nav-bar">
     <Link className="logo" to="/">
@@ -21,6 +22,23 @@ const Sidebar = () => (
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
       </NavLink>
     </nav>
+    <ul>
+      <li>
+        <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/dawit-assaye-2712b323a/'>
+          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
+        </a>
+      </li>
+      <li>
+        <a target='_blank' rel="noreferrer" href='https://github.com/Dawit-Assaye'>
+          <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
+        </a>
+      </li>
+      <li>
+        <a target='_blank' rel="noreferrer" href='https://www.facebook.com/dawit.assaye.75/'>
+          <FontAwesomeIcon icon={faFacebook} color="#4d4d4e"/>
+        </a>
+      </li>
+    </ul>
   </div>
 )
 export default Sidebar
