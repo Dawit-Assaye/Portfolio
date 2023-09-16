@@ -18,7 +18,7 @@ const Sidebar = () => (
         <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
       </NavLink>
       <NavLink exact="true" activeClassname="active" className="contact-link" to="/contact">
-        <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        <FontAwesomeIcon icon={faEnvelope} color="#181818" />
       </NavLink>
     </nav>
   </div>
