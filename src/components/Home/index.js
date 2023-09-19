@@ -9,14 +9,19 @@ const Home = () => {
     const nameArray = ['a','w','i','t']
     const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.'] 
     
-    useEffect(() => {
-        return setTimeout(() => {
-            setLetterClass("text-animate-hover")
-        },4000)
-},[])
+    
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
 
-    return (
-        <div className="container home-page">
+    // Clear the timeout when the component unmounts
+    return () => clearTimeout(timeoutId)
+  }, [])
+  
+
+return (
+    <div className="container home-page">
             <div className="text-zone">
                 <h1>
                     <span className={letterClass}>H</span>
