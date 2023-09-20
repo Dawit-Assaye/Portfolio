@@ -1,6 +1,7 @@
 import './index.scss'
 import { Link } from 'react-router-dom';
 import Dawit from '../../assets/images/Dawit.png'
+import Logo from './Logo'
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 
@@ -42,6 +43,7 @@ return (
                 <h2>Fullstack Developer/ Java Expert / Photographer</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
+            <Logo/>
         </div>
     );
 }
