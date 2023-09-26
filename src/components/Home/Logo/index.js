@@ -63,7 +63,7 @@ useLayoutEffect(() => {
         <g
         
           className="svg-container"
-          transform="translate(0 500) scale(.7  -.7 )"
+          transform="translate(0 500) scale(.3  -.7 )"
           fill="none"
           >
           <path
