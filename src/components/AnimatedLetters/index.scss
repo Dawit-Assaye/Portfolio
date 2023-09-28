@@ -19,6 +19,17 @@ animation-fill-mode:both;
 }
 }
 
+.text-animate-hover-about {
+    min-width:10px;
+    display:inline-block;
+    animation-fill-mode:both;
+    
+    &:hover {
+        animation:rubberBand 1s;
+        color:#521feb;
+    }
+    }
+
 
 @for $i from 1 through 35 {
     .text-animate._#{$i} {
